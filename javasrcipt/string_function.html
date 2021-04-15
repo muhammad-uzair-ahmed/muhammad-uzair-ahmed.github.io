@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string | string function</title>
+
+
+</head>
+<body>
+    <h1>string and its function</h1>
+
+</body>
+<script>
+    var str= "              this is my frist function ";
+    console.log(str);
+// frist occurance of String
+
+var position= str.indexOf('my');
+console.log(position);
+
+// last occurance of String
+
+functions= str.lastIndexOf('is');
+console.log(functions);
+
+// slice form string
+
+ position=str.slice(0,4);
+ console.log("this is substring froms\n",position);
+//substring method
+
+substring=str.substr(0,4);
+console.log(substring);
+
+// string replacement 
+
+var replace=str.replace('function', 'position');
+console.log(replace);
+//upper case 
+var upercase=str.toUpperCase();
+console.log(upercase);
+// lowercase string
+console.log(str.toLowerCase());
+
+// concatdination method
+newstring=str.concat("and position/method")
+console.log(newstring);
+
+//trim function remove white space
+var str2= "      this is trim      function  we can use to     remove white space    ";
+var whitespace=str.trim();
+console.log(whitespace);
+console.log(str2.trim());
+
+// charAt code function reture the value of character index value 
+char2=str.charAt(15);
+console.log(char2);
+
+// charcode method reture the value of carcode 
+char2=str.charCodeAt();
+console.log(char2);
+
+</script>
+</html>
