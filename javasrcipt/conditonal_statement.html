@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,9 @@
 
 
 </head>
+
 <body>
-    <h1> java script scope and  conditional statement</h1>
+    <h1> java script scope and conditional and switch statement </h1>
 
     <div class="container">
         <div class="row">
@@ -27,7 +29,56 @@
         </div>
     </div>
     <script>
-console.log('this is items list');
+        console.log('this is items list');
+
+        // let is the block element we can use is alternative var element 
+        let a = 1; {
+            let a = 2;
+            console.log(a)
+
+        }
+        console.log(a);
+        // const variable define method 
+        const b = "this cant be change";
+        console.log(b);
+
+
+        //   constant variable cant change 
+        // b = "i want to change const properties ";
+        console.log(b);
+
+        let gender = "male";
+        if (gender = "male") {
+            console.log('you are boy');
+
+        }
+        else if (gender = "female") {
+            console.log('you are girl  ');
+        }
+
+        else {
+            console.log("you are 3rd types of person");
+        }
+        const cups =23;
+switch (cups) {
+    case 12:
+        console.log("the value of caps cake is 24");
+        break;
+console.log("the value of caps cake is 54");
+
+        case 13:
+        console.log("the value of caps cake is 24");
+
+        break;
+    case 23:
+        
+    console.log("the value of caps cake is 23");
+        break;
+    default:
+        console.log('none');
+        break;
+}
+        
     </script>
 </body>
 
