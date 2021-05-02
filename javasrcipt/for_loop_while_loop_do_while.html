@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for ,do while , while ,for each loop</title>
+</head>
+<body>
+    <h1>for ,do while , while ,for each loop | tuttorial 55</h1>
+</body>
+<script>
+    console.log("hello world");
+let friend=[1,2,3,4,5];
+// for loop
+for (let index = 0; index < friend.length; index++) {
+    const element = friend[index];
+    console.log("for loop defined "+ element +" working");   
+
+}
+// foreach loop
+friend.forEach(element => console.log("foreach loop default "+element+" method defined"));
+// foreach loop different method 
+ friend.forEach(function f(dost) {
+   console.log("foreach loop defined "+ dost +" working");  
+ } );
+//  for of loop
+ for (const element of friend) {
+     console.log("for of loop defined "+element+" its diffent to other for loop but work same ");
+     
+ }
+// for in loop
+
+ let employee = {
+     name:"uzair",
+     salary: 2,
+     work: "nulla"
+    }
+for(key in employee){
+    console.log(`the ${key} of this emoplyee ${employee[key]}`); 
+}
+
+
+// while loop
+
+let wi=0
+while (wi<10) {
+    console.log(`the value of wi ${wi} is less then  10` );
+    wi++;
+}
+// do while loop
+let j =10;
+do {
+    console.log(`the value of j ${j} is less then  0 do white loop` );
+    j++;
+} while (j<0);
+    
+
+ 
+</script>
+</html>
