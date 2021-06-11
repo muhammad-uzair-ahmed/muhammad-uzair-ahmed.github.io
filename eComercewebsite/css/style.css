@@ -1,0 +1,29 @@
+*{
+	
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+.navbar{
+	padding: 30px 80px 30px 80px;
+}
+.card_shoes_1 img{
+height: auto;	
+
+
+}
+.shoesCollection{
+	background-color: coral;
+	height: auto;
+	width: 100%;
+}
+.buyButton{
+	padding-top: 43px;
+
+
+}
+.buyButton button{
+
+font-size: x-large;
+background-color: black;
+}
