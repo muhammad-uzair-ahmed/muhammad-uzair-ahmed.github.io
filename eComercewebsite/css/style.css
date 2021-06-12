@@ -2,6 +2,10 @@
 	
 	font-family: 'Trebuchet MS', sans-serif;
 }
+/* .logo img{
+	width: 100px;
+	height: 50px;
+}
 nav{
 	background-color: #6351ce;
 }
@@ -11,6 +15,34 @@ nav{
 }
 .nav-item a{
 	float: left;
+} */
+
+.nav-item {
+	/* float: left; */
+	color: whitesmoke;
+}
+nav{
+	background-color: #6351ce;
+}
+.feature{
+	background-color: rgb(72, 73, 71);
+	color: whitesmoke;
+}
+.feature ul li{
+	display: inline;
+	list-style: none;
+	font-size: x-large;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	
+}
+.rating li{
+	list-style: none;
+	display: inline;
+}
+.carousel-inner{
+	height: 500px;
 }
 .card_shoes_1 img{
 height: auto;	
