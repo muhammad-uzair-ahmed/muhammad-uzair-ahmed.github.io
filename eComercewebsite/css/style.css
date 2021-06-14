@@ -42,7 +42,7 @@ nav{
 	display: inline;
 }
 .carousel-inner{
-	height: 500px;
+	height: auto;
 }
 .card_shoes_1 img{
 height: auto;	
