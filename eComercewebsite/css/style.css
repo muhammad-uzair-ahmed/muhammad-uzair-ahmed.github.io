@@ -237,4 +237,14 @@ background-color: black;
 	  opacity: 1;
 	}
       }
-      
+      /* pagination
+       */
+
+.input-group.md-form.form-sm.form-2 input {
+border: 1px solid #6351ce;
+border-top-left-radius: 0.25rem;
+border-bottom-left-radius: 0.25rem;
+      }
+.pagination{
+	padding-left: 25%;
+}
