@@ -19,8 +19,7 @@ nav{
 	float: left;
 } */
 
-.nav-item {
-	/* float: left; */
+.nav-item a{
 	color: whitesmoke;
 }
 nav{
