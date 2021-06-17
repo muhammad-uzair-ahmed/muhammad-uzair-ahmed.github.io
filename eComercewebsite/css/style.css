@@ -1,5 +1,7 @@
 *{
-	
+margin: 0;
+padding: 0;
+box-sizing: border-box;	
 	font-family: 'Trebuchet MS', sans-serif;
 }
 /* .logo img{
@@ -248,3 +250,4 @@ border-bottom-left-radius: 0.25rem;
 .pagination{
 	padding-left: 0%;
 }
+ 
