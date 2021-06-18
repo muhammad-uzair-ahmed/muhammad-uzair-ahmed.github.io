@@ -4,6 +4,17 @@ padding: 0;
 box-sizing: border-box;	
 	font-family: 'Trebuchet MS', sans-serif;
 }
+.carousel-item  img{
+	/* -webkit-background-size: cover; */
+	/* -moz-background-size: cover; */
+	/* -o-background-size: cover; */
+	/* background-size: cover; */
+     /* background: center cover no-repeat fixed; */
+     height: 700px;
+background-image: cover;    
+}
+
+
 /* .logo img{
 	width: 100px;
 	height: 50px;
@@ -22,7 +33,7 @@ nav{
 .nav-item a{
 	color: whitesmoke;
 }
-nav{
+.navbar{
 	background-color: #6351ce;
 }
 .feature{
@@ -42,9 +53,7 @@ nav{
 	list-style: none;
 	display: inline;
 }
-.carousel-inner{
-	height: auto;
-}
+
 .card_shoes_1 img{
 height: auto;	
 
