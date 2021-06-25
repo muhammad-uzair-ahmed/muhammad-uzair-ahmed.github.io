@@ -1,0 +1,93 @@
+console.log("tutorial 01 ");
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end(`<!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>event and listening | tuttorial 57 </title>
+  </head>
+  <style>
+      .btn {
+	  background-color: aquamarine;
+	  padding: 0px 20px;
+	  border: 1px solid violet;
+	  border-radius: 5px;
+	  color: black;
+	  width: 100px;
+	  font-weight: bold;
+	  text-transform: uppercase;
+	  cursor: pointer;
+	  text-align: center;
+  
+      }
+  </style>
+  
+  <body>
+      <h1> event and listening " tuttorial 57</h1>
+      <div class="container">
+	  <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, dolores perspiciatis ratione nemo
+	      beatae
+	      aliquam esse tempora quam sunt! Doloremque repellendus alias odit quo provident, culpa maxime excepturi
+	      quibusdam aliquid.
+	      lore</p>
+  
+      </div>
+  
+      <div class="btn">
+	  <p id="btn" onclick="togglehiden()" value="hiden/show"> hiden?show </p>
+      </div>
+  
+      <script>
+  
+	  console.log("browser event");
+  
+	  console.log("click event contextmenu");
+	  console.log("mouse over / mouse down /mouse move/mouse up /submit / focus /DOM contant loader / tansitionens");
+  
+  
+	  let para = document.getElementById('para');
+	 
+	  para.addEventListener('mouseover', function run() {
+	      // alert('mouse inside');
+	      console.log("mouse inside");
+  
+	  });
+  
+  
+	  para.addEventListener('mouseout', function run() {
+	      // alert('mouse inside');
+	      console.log("mouse out site");
+  
+	  });
+  
+  
+	  function togglehiden() {
+	      let btn = document.getElementById('btn');
+  
+	      let para = document.getElementById('para');
+	      if (para.style.display != 'none') {
+		  para.style.display = 'none';
+	      }
+	      else {
+		  para.style.display = 'block';
+	      }
+	  }
+      </script>
+  </body>
+  
+  </html>`);
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
