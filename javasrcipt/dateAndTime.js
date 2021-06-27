@@ -1,0 +1,1 @@
+var rightNow = new Date();
