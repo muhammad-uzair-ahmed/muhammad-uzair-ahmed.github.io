@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>quiz portal</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="p-5 text-center">
+		<h1>
+			Object
+
+		</h1>
+		<b>
+
+			Assignment
+			JAVASCRIPT
+		</b>
+
+	</div>
+	<div class="p-3">
+		<h4>1. Suppose You have an array of object
+			var itemsArray = [
+			{name:”juice”,price:”50”, quantity:”3”},
+			{name:”cookie”,price:”30”, quantity:”9”},
+			{name:”shirt”,price:”880”, quantity:”1”},
+			{name:”pen”,price:”100”, quantity:”2”}];
+			Calculate total price of each item and all items;
+		</h4>syntax:
+<small>
+	
+	
+	var product = [
+	{
+	    name: "juice",
+	    price: "50",
+	    quantity: "3",
+	},
+	{
+	    name: "cookie",
+	    price: "30",
+	    quantity: "9",
+	},
+	{
+	    name: "shirt",
+	    price: "880",
+	    quantity: "1",
+	},
+	{
+	    name: "pen",
+	    price: "100",
+	    quantity: "2",
+	}
+    ]
+    
+    var total = (product[0].price * product[0].quantity);
+    var total2 = (product[1].price * product[1].quantity);
+    var total3 = (product[2].price * product[2].quantity);
+    var total4 = (product[3].price * product[3].quantity);
+    
+    (function () {
+	    var old = console.log;
+	    var logger = document.getElementById('question1');
+	    console.log = function (message) {
+		if (typeof message == 'object') {
+		    logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
+		} else {
+		    logger.innerHTML += message + '<br />';
+		}
+	    }
+	})();
+    // document.getElementById("").innerHTML=21 ;
+    console.log(total);
+    console.log(total2);
+    console.log(total3);
+    console.log(total4);
+
+</small>
+		<h3 class="text-primary" id="">
+			Output :<br>
+		</h3>
+		<div id="question1">
+
+		</div>
+	</div>
+
+	<div class="p-3">
+		<h4> 2. Create an object with properties name, email, password, age,
+			gender, city, country.
+			Check if age and country properties exist in object or not.
+			Also check firstName and lastName properties in object</h4>
+syntax:
+<small>
+	
+	(function () {
+		var old = console.log;
+		var logger = document.getElementById('question2');
+		console.log = function (message) {
+		    if (typeof message == 'object') {
+			logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
+		    } else {
+			logger.innerHTML += message + '<br />';
+		    }
+		}
+	    })();
+var PersonDetails = {
+    fristName: "muhammad uzair ",
+    lastName:"ahmed",
+    email: "ua78900@gmail.com",
+    password: "uziar123",
+    age: 21,
+    gender: "Male",
+    city: "Karachi",
+    country: "Pakistan",
+}
+	if("age" in PersonDetails && "country" in PersonDetails == true){
+		if("fristName" in PersonDetails && "lastName" in PersonDetails == true){
+	    console.log("all properties are exist in object ");
+	} 
+}
+else{
+	    console.log("Not found");
+
+	}
+
+</small>
+			<h3 class="text-primary" id="">
+			Output :<br>
+
+
+
+		</h3>
+		<div id="question2">
+
+		</div>
+	</div>
+	<div class="p-3">
+		<h4>3. Create a constructor function with some properties. Now
+			create multiple records using the constructor.
+
+		</h4>
+syntax:
+		<small>
+	(function () {
+		var old = console.log;
+		var logger = document.getElementById('question3');
+		console.log = function (message) {
+		    if (typeof message == 'object') {
+			logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
+		    } else {
+			logger.innerHTML += message + '<br />';
+		    }
+		}
+	    })();
+	
+		function obj(first, last, middle, age, city){
+			    this.firstName = first;
+			    this.midleName = middle;
+			    this.lastName = last;
+			    this.age = age;
+			    this.city = city;
+			}
+			const intro = new obj("Muhammad", "uzair","ahmed", 21, "karachi")
+			// age= intro.age;
+			console.log("first name : " + intro.firstName);
+			console.log("middle name : " + intro.midleName);
+			console.log("last name : " + intro.lastName);
+			console.log("age of person: " + intro.age);
+			console.log("city name : " + intro.city);
+	
+</small>
+
+		<h3 class="text-primary">
+			Output :<br>
+
+		</h3>
+		<div id="question3">
+
+		</div>
+	</div>
+	<div class="p-3">
+		<h4>
+			4. Suppose you want to check population of your area, their
+			educations and professions.
+			Create a constructor function which holds following
+			properties:
+			Name, gender, address, education, profession,
+			Enter all records one by one.
+			Hint:
+			 use select box for education and profession,
+			 use radio box for gender
+			Bonus : use can use localStorage to save records.
+		</h4>
+syntax:
+<small>
+	function Area(name, gender, address, education, profession){
+		this.name = name;
+		this.gender = gender;
+		this.address = address;
+		this.education = education;
+		this.profession = profession;
+		
+	    }
+	    
+	    function myfun(){
+		var personName = document.getElementById("name").value;
+		var address = document.getElementById("address").value;
+		var education = document.getElementById("education").value;
+		var profession = document.getElementById("profession").value;
+	    
+	    
+		const myArea = new Area(personName, 23, address, education, profession);
+		console.log(myArea);
+		(function () {
+			var old = console.log;
+			var logger = document.getElementById('question4');
+			console.log = function (message) {
+			    if (typeof message == 'object') {
+				logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
+			    } else {
+				logger.innerHTML += message + '<br />';
+			    }
+			}
+		    })();
+	}
+	
+</small>
+		<h3 class="text-primary">Output :<br></h3>
+
+		<form id="question4" method="POST">
+			<div class="form-group">
+				<label for="exampleInputEmail1"> Name</label>
+				<input type="text" class="form-control" id="name" value="name"
+					aria-describedby="emailHelp" placeholder="Enter Name">
+			</div>
+			<div class="form-group">
+				<label for="exampleInputEmail1"> Gender</label>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="exampleRadios"
+						id="male" value="option1" checked>
+					<label class="form-check-label" for="exampleRadios1">
+						male
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="exampleRadios"
+						id="female" value="option2">
+					<label class="form-check-label" for="exampleRadios2">
+						Female
+					</label>
+				</div>
+				<div class="form-check disabled">
+					<input class="form-check-input" type="radio" name="exampleRadios"
+						id="exampleRadios3" value="option3" disabled>
+					<label class="form-check-label" for="exampleRadios3">
+						other ..
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="exampleInputEmail1"> address</label>
+				<input type="text" class="form-control" id="address" value="address"
+					aria-describedby="emailHelp" placeholder="Enter email">
+				<small id="emailHelp" class="form-text text-muted">We'll never share your email
+					with anyone else.</small>
+			</div>
+			
+			<div class="form-group">
+				<label for="inputState">Education</label>
+				<select id="Education" class="form-control" >
+				  <option selected>graduate</option>
+				  <option>matric</option>
+				  <option>inter</option>
+				  <option>graduate</option>
+				  <option>master</option>
+				  <option>php</option>
+				</select>
+			      </div>
+			      <div class="form-group">
+				<label for="inputState">profession</label>
+				<select id="inputState" class="form-control">
+				  <option selected>student</option>
+				  <option>teacher</option>
+				  <option>student</option>
+				 
+				</select>
+			      </div>
+
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">Check me out</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+
+
+	</div>
+	<div class="p-3"></div>
+
+
+
+
+	<!-- exteranl js file inculde  -->
+	<script src="../assignment/object.js">
+
+	</script>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
