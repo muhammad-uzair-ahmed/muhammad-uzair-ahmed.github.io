@@ -29,12 +29,33 @@ nav{
 .nav-item a{
 	float: left;
 } */
+nav ol{
 
-.nav-item a{
-	color: black;
+	margin-top: 10px;
 }
-.navbar{
-	background-color:rgb(223, 231, 214);
+nav ol li {
+	display: inline;
+	list-style: none;
+	
+	
+}
+nav ol li a{
+	padding: 0px 10px 0px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 1.0em;
+} 
+nav ol li a:hover{
+	color:rgb(12, 12, 14);
+
+}
+/* .nav-item a{
+	color: white;
+	text-decoration: none;
+} */
+
+.navbarOne{
+	background-color:#6351ce;
 }
 .feature{
 	background-color: rgb(72, 73, 71);
