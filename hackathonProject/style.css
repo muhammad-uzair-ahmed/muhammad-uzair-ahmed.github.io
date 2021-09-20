@@ -1,0 +1,21 @@
+/* index css */
+.bgColor{
+	background-color: gainsboro;
+}
+.ballon{
+height: 80px;
+width: 80px;
+margin: 20px;
+border-radius: 50%;
+display: inline-block;
+}
+.hidden{
+	display: inline-block;
+	margin: 20px;
+	border-radius: 50%;
+height: 80px;
+width: 80px;
+display: hidden;
+background-color: white;
+text-align: center;
+}
